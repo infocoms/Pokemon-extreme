@@ -1,0 +1,118 @@
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+
+body {
+    background-image: url("../Img/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    font-family: 'Staatliches', cursive;
+}
+.blacktxt{
+    color: black;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+}
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.card {
+     list-style: none;
+     padding: 40px;
+     background: rgb(238,174,202);
+     background: radial-gradient(circle, rgba(238,174,202,1) 23%, rgba(148,187,233,1) 82%);
+     color: #222;
+     text-align: center;
+ }
+
+
+
+.card2 {
+    list-style: none;
+    padding: 40px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #e8efed;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card2:hover {
+    animation: bounce 0.5s linear;
+}
+
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+}
+.card-subtitle {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+}
+
+.card-image {
+    height: 180px;
+}
+
+.pagination{
+    margin: auto;
+}
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(https://i.pinimg.com/originals/8a/4a/72/8a4a7213b43f4ec4f99db406be655f9e.gif) center no-repeat #F7F7F9;
+}
+
+
+.poktypes{
+    background-image: url("../Img/types.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px black;
+    border-radius: 5px;
+}
